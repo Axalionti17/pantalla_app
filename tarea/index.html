@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon.com.mx</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f3f3f3;
+            padding-bottom: 50px;
+        }
+
+        .search-bar {
+            background-color: #fff;
+            padding: 8px 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .small-image {
+        width: 80px; /* Ajustado para un tamaño intermedio */
+        height: auto;
+        }
+
+        .search-bar input {
+            border: none;
+            width: 100%;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .search-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        .location-bar {
+            background-color: #adf0e5;
+            padding: 8px 15px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            color: #000;
+        }
+
+        .location-icon {
+            width: 16px;
+            height: 16px;
+            margin-right: 4px;
+        }
+
+        .main-banner {
+            background-color: #ff5722;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .banner-text {
+            flex: 1;
+        }
+
+        .banner-text h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .banner-image {
+            flex: 1;
+            text-align: right;
+        }
+
+        .shipping-icon {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            padding: 15px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-card h3 {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #0F1111;
+        }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+        }
+
+        .nav-item {
+            text-align: center;
+            color: #0F1111;
+            text-decoration: none;
+            font-size: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .nav-icon {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+
+        .see-more {
+            background: #dcf5d4;
+            padding: 5px 15px;
+            border-radius: 15px;
+            text-decoration: none;
+            color: #0F1111;
+            display: inline-block;
+        }
+
+        .orange-banner {
+            background: #ff5722;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .orange-banner small {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 12px;
+        }
+
+        .sponsored {
+            color: #555;
+            font-size: 12px;
+            display:flex;
+            align-items:center;
+            gap: 5px;
+        }
+
+        .info-icon {
+            width: 16px;
+            height: 16px;
+        }
+
+        .product-price {
+            color: #0F1111;
+            font-weight: bold;
+        }
+
+        .product-title {
+            color: #0F1111;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .banner-image img {
+  width: 30%; /* O el ancho deseado */
+  height: px;
+
+}
+    </style>
+</head>
+<body>
+    <div class="search-bar">
+        <input type="text" placeholder="Buscar en Amazon.com.mx">
+        <img src="5.jpeg" alt="Buscar" class="search-icon">
+    </div>
+
+    <div class="location-bar">
+        <div style="display: flex; align-items: center;">
+            <img src="ubicacion.jpg" alt="Ubicación" class="location-icon">
+            <span>43000</span>
+        </div>
+        <span>Listas de Alexa</span>
+        <span>Prime</span>
+        <span>Video</span>
+    </div>
+
+    <div class="main-banner">
+        <div class="banner-text">
+            <h1>Esenciales para tu hogar desde $299</h1>
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <img src="envio.jpeg" alt="Envíos" class="shipping-icon">
+                <span>Envíos gratis</span>
+            </div>
+        </div>
+        <div class="banner-image">
+            <img src="colores.jpeg" alt="Productos esenciales">
+        </div>
+    </div>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <h3>Comprar nuevamente</h3>
+            <img src="img3.jpeg" alt="Eucerin">
+        </div>
+        <div class="product-card">
+            <h3>Seguir comprando...</h3>
+            <img src="img2.jpeg" alt="Garnier">
+        </div>
+        <div class="product-card">
+            <h3>Oferta recomendada</h3>
+            <img src="img1.jpeg" alt="Gillette">
+        </div>
+    </div>
+
+    <div class="orange-banner">
+        <h2>Pide hoy, recibe mañana</h2>
+        <small>*En pedidos elegibles, consulta términos y condiciones</small>
+    </div>
+
+    <div style="padding: 15px;">
+        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+            <img src="crema.jpeg" alt="Dove">
+            <div>
+                <div class="product-title">DOVE Sérum Corporal en Crema Dermo Hidratante con...</div>
+                <div class="product-price">$115.00</div>
+            </div>
+        </div>
+        <div class="sponsored">
+            <span>Patrocinado</span>
+            <img src="admiracion.png" alt="Info" class="info-icon">
+        </div>
+    </div>
+
+    <h2 style="padding: 15px;">Ofertas para ti</h2>
+
+    <nav class="bottom-nav">
+        <a href="#" class="nav-item">
+            <img src="4.jpeg" alt="Inicio" class="nav-icon">
+            Inicio
+        </a>
+        <a href="#" class="nav-item">
+            <img src="3.jpeg" alt="Cuenta" class="nav-icon">
+            Cuenta
+        </a>
+        <a href="#" class="nav-item">
+            <img src="2.jpeg" alt="Carrito" class="nav-icon">
+            Carrito
+        </a>
+        <a href="#" class="nav-item">
+            <img src="1.jpeg" alt="Menú" class="nav-icon">
+            Menú
+        </a>
+    </nav>
+</body>
+</html>
